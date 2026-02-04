@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +11,101 @@
       <script src="script.js"></script>-->
     <title>Haciendo memoria</title>
 </head>
+
 <body>
+    <!-- para todo el encabezado-->
     <header>
-    <h1>Bienvenido estamos haciendo memoria</h1>
+        <h1>Bienvenido estamos haciendo memoria</h1>
+        <h2>Acompañenos por esta traveisa</h2>
     </header>
-    
-    <p>parrafo</p>
-    <img src="hola.jpg" alt="imagen de prueba">
-    <a href="google.com">presiona aqui</a>
+
+    <!-- menus-->
+    <nav>
+        <a href="ejemplo1.html">Menu Principal</a>
+        <a href="ejemplo2.html">Opciones</a>
+        <a href="ejemplo3.html">Ayuda</a>
+    </nav>
+
+    <!-- para todo el contenido principal-->
+    <main>
+        <p>Aqui encontrara mas informacion</p>
+        <img src="hola.jpg" alt="imagen de prueba">
+
+        <!-- lista desordenada-->
+        <p>Lista de opciones</p>
+        <ul>
+            <li>opcion 1</li>
+            <li>opcion 2</li>
+            <li>opcion 3</li>
+        </ul>
+
+        <!-- lista ordenada-->
+        <ol>
+            <li>opcion 1</li>
+            <li>opcion 2</li>
+            <li>opcion 3</li>
+        </ol>
+
+        <!-- tablas-->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Encabezado 1</th>
+                    <th>Encabezado 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dato A</td>
+                    <td>Dato B</td>
+                </tr>
+                <tr>
+                    <td>Dato C</td>
+                    <td>Dato D</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- ejemplo de forms envolviendo una tabla-->
+        <form action="/enviar-datos" method="POST">
+            <table>
+                <caption>Formulario de Contacto</caption>
+                <tr>
+                    <td><label for="nombre">Nombre:</label></td>
+                    <td><input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Correo:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="interes">Interés:</label></td>
+                    <td>
+                        <select id="interes" name="interes">
+                            <option value="web">Diseño Web</option>
+                            <option value="app">Apps Móviles</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit">Enviar Registro</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
 
 
-    
+
+    </main>
+
+    <!-- pie de pagina-->
+    <footer>
+        <a href="nosotros.html">Sobre Nosotros</a>
+        <a href="contacto.com">Contactenos</a>
+    </footer>
+
+
 </body>
+
 </html>
